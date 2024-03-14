@@ -1,2 +1,14 @@
+
+# 仮想環境
 .venv
+
+# 機密情報
 .env
+
+# chainlit独特なファイル
+.chainlit
+chainlit.md
+
+# 実行ファイルのキャッシュ
+**/__pycache__/**
+
