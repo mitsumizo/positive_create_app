@@ -6,8 +6,9 @@
 .env
 
 # chainlit独特なファイル
-.chainlit
+**/.chainlit/**
 chainlit.md
+**/.files/**
 
 # 実行ファイルのキャッシュ
 **/__pycache__/**
