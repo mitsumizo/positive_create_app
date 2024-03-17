@@ -1,7 +1,8 @@
 import chainlit as cl
-import configs
 from langchain.schema import HumanMessage
 from langchain_openai import ChatOpenAI
+
+import configs
 from prompts import create_positive_prompt
 
 chat = ChatOpenAI(model=configs.AOAI_MODEL)
@@ -10,7 +11,7 @@ chat = ChatOpenAI(model=configs.AOAI_MODEL)
 @cl.on_chat_start
 async def onchat_start():
     await cl.Message(
-        content="何でも入力してね。ポジティブな言葉に変換してあなたを応援するよ！"
+        content="何でも入力してみてね。ポジティブな言葉に変換してあなたを応援するよ！"
     ).send()
 
 
